@@ -15,10 +15,11 @@ nav {
   background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
 }
 .headphones-img {
-  height: 75vh;
+  height: 85vh;
   position: absolute;
-  right: 100px;
+  right: 120px;
   bottom: 45px;
+  opacity: 0.8;
 }
 .hero-text {
   display: flex;
@@ -26,23 +27,63 @@ nav {
   height: inherit;
   flex-direction: column;
   margin-left: 8vw;
-  z-index: -1;
+  z-index: 0;
 }
 .download-button {
   width: fit-content;
   border-radius: 30px;
-  padding: 11px 22px;
+  padding: 12px 24px;
   border: none;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.download-button:hover {
+  background-color: antiquewhite;
 }
 body {
   font-family: system-ui;
 }
 .hero-heading {
   font-size: 50px;
-  width: 355px;
+  width: 28vw;
   margin: 14px 0;
+  z-index: 1;
+}
+.hero-heading span {
+  color: #056368;
 }
 .hero-para-1 {
   font-weight: bold;
   font-size: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1040px) {
+  .hero-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .headphones-img {
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .headphones-img {
+    height: 50vh;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    opacity: 0.2;
+  }
 }
