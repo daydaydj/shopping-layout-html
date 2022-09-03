@@ -59,8 +59,37 @@ body {
   font-size: 20px;
   z-index: 1;
 }
+.headphones-img:hover {
+  transform: scale(1.07);
+}
 .arrow-container img {
   position: absolute;
+  height: 130px;
+  left: 43%;
+  top: 39%;
+  animation-name: arrow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0% {
+    left: 40%;
+    top: 39%;
+  }
+  50% {
+    left: 43%;
+    top: 39%;
+  }
+
+  100% {
+    left: 40%;
+    top: 39%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .arrow-container img {
+    display: none;
+  }
 }
 @media screen and (max-width: 1040px) {
   .hero-heading {
