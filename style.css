@@ -59,7 +59,9 @@ body {
   font-size: 20px;
   z-index: 1;
 }
-
+.arrow-container img {
+  position: absolute;
+}
 @media screen and (max-width: 1040px) {
   .hero-heading {
     font-size: 40px;
